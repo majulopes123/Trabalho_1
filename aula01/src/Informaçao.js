@@ -1,9 +1,10 @@
 import React from 'react'
+import "./Estilo.css"
 
 const Informaçao = () => {
   const [ nome, setNome] = React.useState()
   const [ telefone, setTelefone] = React.useState()
-
+ 
   const Salvar = () => {
     console.log("Salvar informações")
     console.log(nome)
@@ -32,7 +33,15 @@ const Informaçao = () => {
           type= "button"
           value="Salvar"
           onClick={ () => Salvar()}
+          
       />
+      
+        Atualização: {nome} 
+        <div></div>
+        {telefone}
+      
+    
+    
     </div>
   )
 }
