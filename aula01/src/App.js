@@ -1,6 +1,13 @@
+import Informação from './Informaçao'
+import RA from './RA'
+
 function App() {
   return (
-    <div>Preencha os campos a baixo:</div>
+    <div>
+      <RA />
+      <div></div>
+      <Informação />
+    </div>
   )
 }
 
